@@ -8,7 +8,7 @@ int main()
 
     for(int i=0; i<3; i++)
     {
-        cout<<"Enter integers for array A and then array B fpr the "<<i<<"th element"<<endl;
+        cout<<"Enter integers for array A and then array B for the "<<i<<"th element"<<endl;
         cin>>A[i];
         cin>>B[i];
     }
