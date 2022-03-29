@@ -17,6 +17,14 @@ void passByReference(int &x, int &y)
     y=z;   
 }
 
+// pass by address or pointers
+void passByPointers(int *x, int *y)
+{
+    int z= *x;
+    *x=*y;
+    *y=z;
+}
+
 // main function
 int main()
 {
@@ -33,6 +41,12 @@ int main()
     
     cout<<"After swapping using passByReference function"<<endl<<"a= "<<a<<endl<<"B= "<<b<<endl<<endl;
 
+
+    // call function 3
+    passByPointers(&a,&b);
+    
+    cout<<"After swapping using passByPointers function"<<endl<<"a= "<<a<<endl<<"B= "<<b<<endl<<endl;
+    // remember that we've already swapped the values in the passByReference function so the output will show the original values i.e., the currently swapped values
     return 0;
 }
 
