@@ -13,6 +13,7 @@ int main()
     // FILE WRITE OPERATION
     // like we use int x or  float y
     ofstream myfile("xyz.txt", ios::app); // ofstream data type and myfile is name
+    //ios::app to append so that the prev contents aren't overwritten
     myfile<<arr;
     myfile.close();
     cout<<"File write operation performed successfully."<<endl;
